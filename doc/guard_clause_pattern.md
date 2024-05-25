@@ -4,6 +4,16 @@
 
 Guard Clause is a programming technique used to improve the readability and maintainability of code by checking for pre-conditions early in a function and returning immediately if any condition is not met.
 
+## Table of Contents
+
+1. [Overview](#guard-clause-in-c-programming)
+2. [Problem](#problem)
+3. [Solution](#solution)
+    - [Key Steps](#key-steps)
+4. [Example](#example)
+    - [Before Guard Clause](#before-guard-clause)
+    - [After Applying Guard Clause](#after-applying-guard-clause)
+
 ## Problem
 
 When a function has multiple pre-conditions that need to be checked, it can lead to nested if statements and make the code harder to read and maintain. This often occurs when handling resource allocation and requires cleanup.

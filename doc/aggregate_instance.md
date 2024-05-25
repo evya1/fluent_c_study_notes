@@ -1,6 +1,20 @@
 # Aggregate Instance Pattern in C
 
+## Overview
+
 In C programming, an _aggregate instance_ typically refers to a variable of a struct or array type. Aggregates allow you to group multiple related variables together, which can then be passed as a single entity to a function. This approach simplifies function signatures and helps avoid errors associated with passing multiple parameters.
+
+## Table of Contents
+
+1. [Overview](#aggregate-instance-pattern-in-c)
+2. [Explanation](#explanation)
+3. [Example with Code Snippets](#example-with-code-snippets)
+    - [Without Aggregate Instance](#without-aggregate-instance)
+    - [With Aggregate Instance](#with-aggregate-instance)
+4. [Visualization](#visualization)
+    - [Without Aggregate Instance](#without-aggregate-instance-1)
+    - [With Aggregate Instance](#with-aggregate-instance-1)
+5. [File References](#file-references)
 
 ## Explanation
 
@@ -102,4 +116,7 @@ A single struct instance encapsulates all parameters.
 
 By using an aggregate instance, you improve the maintainability and readability of your code, making it easier to understand and less error-prone.
 
-For the complete code example, refer to the [aggregate_instance.c](../aggregate_instance.c) file.
+## File References
+
+-   [aggregate_instance.c](../src/aggregate/aggregate_instance.c)
+-   [aggregate_instance.h](../src/aggregate/aggregate_instance.h)
