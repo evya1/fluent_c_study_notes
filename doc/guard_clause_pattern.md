@@ -34,9 +34,12 @@ int parseFile(char* file_name) {
     FILE* file_pointer = 0;
     char* buffer = 0;
 
-    if(file_name != NULL) {
-        if((file_pointer = fopen(file_name, "r")) != NULL) {
-            if((buffer = malloc(BUFFER_SIZE)) != NULL) {
+    if(file_name != NULL)
+    {
+        if(file_pointer = fopen(file_name, "r") != NULL)
+        {
+            if(buffer = malloc(BUFFER_SIZE) != NULL)
+            {
                 return_value = searchFileForKeywords(buffer, file_pointer);
                 free(buffer);
             }
@@ -52,23 +55,26 @@ int parseFile(char* file_name) {
 
 ```c
 int parseFile(char* file_name) {
+    int return_value = ERROR;
+    FILE* file_pointer = 0;
+    char* buffer = 0;
+
     if(file_name == NULL) return ERROR;
 
-    FILE* file_pointer = fopen(file_name, "r");
-    if(file_pointer == NULL) return ERROR;
 
-    char* buffer = malloc(BUFFER_SIZE);
-    if(buffer == NULL) {
+    if(file_pointer = fopen(file_name, "r"))
+    {
+        if(buffer = malloc(BUFFER_SIZE))
+        {
+            return_value = searchFileForKeywords(buffer, file_pointer);
+            free(buffer);
+        }
         fclose(file_pointer);
-        return ERROR;
     }
-
-    int return_value = searchFileForKeywords(buffer, file_pointer);
-    free(buffer);
-    fclose(file_pointer);
 
     return return_value;
 }
+
 
 ```
 
