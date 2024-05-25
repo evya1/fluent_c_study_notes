@@ -1,21 +1,6 @@
 #include <stdio.h>
+#include "aggregate_instance.h"
 
-// Define a struct to hold person details
-struct Person
-{
-    const char *name;
-    int age;
-    float height;
-    float weight;
-};
-
-// Function prototype without aggregate instance
-void printPersonDetailsWithoutAggregate(const char *name, int age, float height, float weight);
-
-// Function prototype with aggregate instance
-void printPersonDetailsWithAggregate(struct Person p);
-
-// Function definition without aggregate instance
 void printPersonDetailsWithoutAggregate(const char *name, int age, float height, float weight)
 {
     printf("Name: %s\n", name);
@@ -24,7 +9,6 @@ void printPersonDetailsWithoutAggregate(const char *name, int age, float height,
     printf("Weight: %.2f\n", weight);
 }
 
-// Function definition with aggregate instance
 void printPersonDetailsWithAggregate(struct Person p)
 {
     printf("Name: %s\n", p.name);
@@ -33,7 +17,7 @@ void printPersonDetailsWithAggregate(struct Person p)
     printf("Weight: %.2f\n", p.weight);
 }
 
-int main()
+void aggregate_instance_main()
 {
     // Data for the examples
     const char *name = "Alice";
@@ -54,6 +38,4 @@ int main()
 
     // Refer to the explanation in the README.md file for more details
     // For the complete explanation, refer to the aggregate_instance.md file in the doc directory
-
-    return 0;
 }
