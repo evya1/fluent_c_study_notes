@@ -5,7 +5,8 @@ This repository is dedicated to mastering C programming concepts. Most of the co
 ## Table of Contents
 
 -   [Aggregate Instance Pattern](doc/aggregate_instance.md)
--   [What is Makefile ?](doc/makefile.md)
+-   [Guard Clause Pattern](doc/guard_clause_pattern.md)
+-   [What is a Makefile ?](doc/makefile.md)
 
 ### Learning Resource
 
